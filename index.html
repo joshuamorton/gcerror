@@ -2,11 +2,16 @@
 <html>
     <head>
         <title>Test</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="style.css"></link>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.js"></script>
     </head>
     <body>
         <div style="font-family:raleway;font-size:200px;">Joshua Morton!</div>
-        <canvas id="myCanvas" width="1600" height="300"></canvas>
+        <canvas id="myCanvas" width="1600" height="200"></canvas>
+        <canvas id="myCanvas2" width="1600" height="200"></canvas>
+        <canvas id="myCanvas3" width="1600" height="200"></canvas>
+        <canvas id="myCanvas4" width="1600" height="200"></canvas>
+        <canvas id="myCanvas5" width="1600" height="200"></canvas>
     </body>
 <!--     <script type="text/javascript">
         var c=document.getElementById("myCanvas");
@@ -41,4 +46,13 @@
         ctx.fill();
     </script> -->
     <script type="text/javascript" src="test.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var c=document.getElementById("myCanvas5");
+            var ctx=c.getContext("2d");
+            ctx.font='200px raleway';
+            ctx.fillText("Joshua Morton!",0,150);
+            console.log("hi");
+        });
+    </script>
 </html>
